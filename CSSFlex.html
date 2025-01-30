@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: aliceblue;
+            border: 10px solid black;
+            padding: 20px;
+            min-height: 400px;
+            
+            flex-direction: row;
+            flex-wrap: nowrap;
+            row-gap: 15px;
+            column-gap: 3px;
+            
+        }
+        .item{
+            display: flex;
+            background-color: salmon;
+            border: 1px solid black;
+            /* padding: 20px; */
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-align: center;
+            height: 60px;
+            /* flex-shrink: 99;
+            flex-grow: 1; */
+            
+        }
+        #i1{
+
+            /* flex-grow: 5;
+             */
+             flex-shrink: 5;
+             align-self: flex-start;
+             /* margin-right: auto; */
+        }
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">item 1</div>
+        <div class="item" id="i2">item 2</div>
+        <div class="item" id="i3">item 3</div>
+        <div class="item" id="i4">item 4</div>
+        <div class="item" id="i5">item 5</div>
+        <div class="item" id="i6">item 6</div>
+        <div class="item" id="i7">item 7</div>
+        <div class="item" id="i8">item 8</div>
+        <!-- <div class="item" id="i9">item 9</div> -->
+    </div>
+</body>
+</html>

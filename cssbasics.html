@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        h3{
+            color: rgb(36, 130, 130);
+            background-color: rgb(216, 216, 228);
+
+        }
+
+        /* Attribute Selector */
+        a[href="htmlform.html"]{
+            color: rgb(136, 157, 150);
+            
+        }
+        /* Id Selector */
+        #id1{
+            background-color: brown;
+        }
+        #id2{
+            color: salmon;
+        }
+        /* Class selector */
+        .c1{
+            color: fuchsia;
+        }
+        
+        h1:hover{
+            color: rgb(239, 230, 247);
+        }
+        /* Combinator Selector */
+        .d1 p:hover{
+            rotate: 43deg;
+            motion-rotation: 45deg;
+        }
+    </style>
+</head>
+<body>
+    <h1>Front End Web Dev - INT219</h1>
+    <h2>Let's learn CSS with hands-on practice.</h2>
+    <h3>Let's learn CSS with hands-on practice.</h3>
+    <h4>Let's learn CSS with hands-on practice.</h4>
+    <h5 class="c1">Let's learn CSS with hands-on practice.</h5>
+    <h6 class="c1">Let's learn CSS with hands-on practice.</h6>
+    <p id="id1">heyo</p>
+    <p id="id2">heyo</p>
+
+    <a href="htmlform.html">Forms</a>
+    <a href="htmllist.html">Lists</a>
+    <div class="d1"><p>This para is in div</p></div>
+    <p>This is a para</p>
+</body>
+</html>

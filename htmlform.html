@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="uname">Enter Name:</label>
+        <input type="text" name="uname" id="uname" size="17" maxlength="10" placeholder="Type text" required>
+        <br>
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+        <br>
+        <br>
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail" placeholder="Enter Email" required> 
+        <br>
+        <br>
+        <label for="hobby">Choose your hobby:</label>
+        <input type="checkbox" name="hobby" id="hobby" value="cook">Cooking
+        <input type="checkbox" name="hobby" id="hobby" value="sang">Singing
+        <input type="checkbox" name="hobby" id="hobby" value="play">Playing Cricket
+        <br>
+        <br>
+        <label for="sem">Select your Semester:</label>
+        <input type="radio" name="time" id="sem1" value="python"><label for="sem1">Semester 1</label>
+        <input type="radio" name="time" id="sem2" value="c"><label for="sem2">Semester 2</label>
+        <input type="radio" name="time" id="sem3" value="c++"><label for="sem3">Semester 3</label>
+        <input type="radio" name="time" id="sem4" value="java"><label for="sem4">Semester 4</label>
+
+        <br>
+        <br>
+        <label for="stateselect">Select City: </label>
+        <select name="stateselect" id="stateselect" size="1" multiple>
+        <option value="lko">Lucknow</option>
+        <option value="azm">Azamgarh</option>
+        <option value="gz">Ghazipur</option>
+        <option value="jnp">Jaunpur</option>
+        </select>
+        <br><br>
+        <label for="fileselect" slot="3">Choose File: </label>
+        <input type="file" name="fileselect" id="fileselect">
+        <br><br>
+        <input type="image" name="img" id="img" src="submit.png" width="130" height="130">
+        <input type="reset" name="resetit" id="resetit">
+        <input type="submit" name="submitForm" id="submitForm">
+        <br>
+        <br>
+        <label for="review">Write a review</label> 
+        <br><textarea name="review" id="review" placeholder="Enter text" rows="4" cols="19"></textarea>
+
+    </form>
+</body>
+</html>
